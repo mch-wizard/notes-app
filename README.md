@@ -1,5 +1,6 @@
 # Notes App
 Currently application for desktop and tablets
+Preview: https://mch-notesapp.netlify.app/
 
 ## Functions to add
 * RWD
