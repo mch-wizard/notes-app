@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/d1754a7524.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="menu">
+        <h1><i class="far fa-sticky-note"></i>NotesApp</h1>
+        <div class="menu-buttons">
+            <button class="add icon"><i class="fas fa-plus"></i> Add</button>
+            <button class="delete-all icon"><i class="far fa-trash-alt"> Delete All</i></button>
+        </div>
+    </div>
+    <div class="note-area">
+        <!-- <div class="note">
+            <div class="note-header">
+                <h3 class="note-title">Note #1</h3>
+                <button class="delete-note"><i class="fas fa-times icon"></i></button>
+            </div>
+            <div class="note-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid reprehenderit cumque tempore ipsa ullam? Quas accusantium magnam soluta omnis debitis saepe dolorum modi exercitationem, nihil deleniti voluptatum fugiat reiciendis totam.
+            </div>
+        </div> -->
+    </div>
+    <div class="note-panel">
+        <h2>Add a note</h2>
+        <label for="category">Select a category</label>
+        <select id="category" onchange="selectValue()">
+            <option value="0" disabled selected>- select a category -</option>
+            <option value="1">Urgent</option>
+            <option value="1">Tomorrow</option>
+            <option value="1">Others</option>
+        </select>
+        <label for="text">Enter the text of the note </label>
+        <textarea id="text"></textarea>
+        <p class="error">Please complete all fields!</p>    
+        <div class="panel-buttons">
+            <button class="save icon"><i class="far fa-save"></i> Save</button>
+            <button class="cancel icon"><i class="far fa-window-close"></i> Cancel</button>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
